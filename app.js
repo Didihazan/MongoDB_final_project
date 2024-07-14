@@ -5,10 +5,8 @@ const companyRoutes = require('./routes/companies');
 
 const app = express();
 
-// התחברות ל-MongoDB
 connectDB();
 
-// שימוש בנתיבים
 app.use('/phones', phoneRoutes);
 app.use('/companies', companyRoutes);
 
